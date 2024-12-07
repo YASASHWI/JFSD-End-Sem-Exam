@@ -1,0 +1,12 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.klef.jfsd.exam.Department" table="Department">
+        <id name="departmentId" column="department_id">
+            <generator class="identity" />
+        </id>
+        <property name="name" column="name" not-null="true" />
+        <property name="location" column="location" not-null="true" />
+        <property name="hodName" column="hod_name" not-null="true" />
+    </class>
+</hibernate-mapping>
